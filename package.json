@@ -1,0 +1,22 @@
+{
+  "name": "mov51-follower-discord",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/devramsean0/mov51-follower-discord.git",
+  "author": "Devramsean0 <81807361+devramsean0@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@sapphire/ts-config": "^3.3.4",
+    "@types/express": "^4.17.15",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "colorette": "^2.0.19",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
