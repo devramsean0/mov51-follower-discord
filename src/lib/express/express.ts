@@ -1,10 +1,15 @@
 // Setup Vars
 import express from "express";
+import passport from "passport";
 import { generateRoutes } from "./generateRoutes.js";
-const app = express();
+export const app = express();
 const port = process.env.PORT || 3000
 
 generateRoutes(app);
+// Auth
+import "./passport/init.js";
+app.get("/twitch", passport.authenticate('twitch', { scope: "user:read:follows"})),
+app.get("/twitch/callback", passport.authenticate('twitch', { failureRedirect: '/', successRedirect: '/twitch/success'}))
 
 // Start the server
 app.listen(port, () => {
