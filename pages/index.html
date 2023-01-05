@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MOV51 follower roles</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>
+            You are not authenticated
+            <br />
+            You will be redirected in 5ish seconds
+        </p>
+        <script>
+            // Gain and store Discord ID
+            const urlParams = new URLSearchParams(window.location.hash.slice(1));
+            const discordID = urlParams.get('discordId');
+            console.log(urlParams)
+            localStorage.setItem('discordID', discordID);
+            // Redirect to twitch page
+            //window.location.href = `/twitch`;
+        </script>
+    </body>
+</html>

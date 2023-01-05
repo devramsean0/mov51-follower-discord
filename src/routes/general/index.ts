@@ -7,7 +7,7 @@ const data = {
     secure: false,
     funct: async (req: Request, res: Response) => {
         console.log(req.user)
-        res.sendFile("index.nonauthenticated.html", {root: container.pagesPath})
+        res.sendFile("index.html", {root: container.pagesPath})
     }
 }
 export default data;

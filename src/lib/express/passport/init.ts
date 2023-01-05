@@ -5,9 +5,12 @@ import request from "request";
 import express from "express";
 import { app } from "./../express.js";
 // App uses
-app.use(session({secret: process.env.TWITCH_SESSION_SECRET || "hello:world", resave: false, saveUninitialized: false}));
 app.use(express.static('public'));
 app.use(passport.initialize());
+app.use(session({
+  secret: "hello",
+  saveUninitialized: false,
+}))
 app.use(passport.session());
 const {TWITCH_CLIENT_ID, TWITCH_SECRET, /*TWITCH_SESSION_SECRET*/ TWITCH_CALLBACK_URL} = process.env
 // Override passport profile function to get user profile from Twitch API

@@ -2,7 +2,7 @@ import type { Application } from "express";
 import fs from "node:fs";
 import logger from "../misc/logger.js";
 import { container } from "../../container.js";
-import passport from "passport";
+//import passport from "passport";
 const directory = `${process.cwd()}/dist/routes`;
 export async function generateRoutes(app: Application) {
     logger.info("Started Loading Routes")
@@ -31,7 +31,7 @@ export async function generateRoutes(app: Application) {
 async function createRoute(app: Application, type: string, route: string, funct: Function) {
     switch (type) {
         case "get":
-                return app.get(route, passport.authenticate('session'), (async (req, res) => {
+                return app.get(route, (async (req, res) => {
                     await funct(req, res)
                 }))
         default:
