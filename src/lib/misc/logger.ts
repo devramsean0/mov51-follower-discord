@@ -11,7 +11,7 @@ class Logger {
         console.log(`${colourette.red("[ERROR]")} ${txt}`)
     }
     public success(txt: string) {
-        console.log(`${colourette.green("[ERROR]")} ${txt}`)
+        console.log(`${colourette.green("[SUCCESS]")} ${txt}`)
     }
 }
 const logger = new Logger();

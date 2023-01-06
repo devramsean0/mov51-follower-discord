@@ -10,6 +10,7 @@ app.use(passport.initialize());
 app.use(session({
   secret: "hello",
   saveUninitialized: false,
+  resave: false
 }))
 app.use(passport.session());
 const {TWITCH_CLIENT_ID, TWITCH_SECRET, /*TWITCH_SESSION_SECRET*/ TWITCH_CALLBACK_URL} = process.env

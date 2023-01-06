@@ -5,8 +5,7 @@ const data = {
     type: 'get',
     route: '/',
     secure: false,
-    funct: async (req: Request, res: Response) => {
-        console.log(req.user)
+    funct: async (_req: Request, res: Response) => {
         res.sendFile("index.html", {root: container.pagesPath})
     }
 }

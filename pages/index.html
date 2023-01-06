@@ -12,12 +12,12 @@
         </p>
         <script>
             // Gain and store Discord ID
-            const urlParams = new URLSearchParams(window.location.hash.slice(1));
-            const discordID = urlParams.get('discordId');
-            console.log(urlParams)
-            localStorage.setItem('discordID', discordID);
-            // Redirect to twitch page
-            //window.location.href = `/twitch`;
+            const urlParams = window.location.hash.split("#");
+            const discordID = urlParams[1];
+            document.cookie = discordID
+            //Redirect to twitch page
+            setTimeout(5000);
+            window.location.href = `/twitch`;
         </script>
     </body>
 </html>

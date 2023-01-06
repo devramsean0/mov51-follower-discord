@@ -1,10 +1,11 @@
 // Setup Vars
 import express from "express";
 import passport from "passport";
+import cookieParser from "cookie-parser";
 import { generateRoutes } from "./generateRoutes.js";
 export const app = express();
 const port = process.env.PORT || 3000
-
+app.use(cookieParser())
 generateRoutes(app);
 // Auth
 import "./passport/init.js";

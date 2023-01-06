@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { cookiesMNGR } from "../../lib/misc/cookies.js";
 //import { container } from "./../../container.js";
 
 const data = {
@@ -6,7 +7,9 @@ const data = {
     route: '/twitch/success',
     secure: false,
     funct: async (req: Request, res: Response) => {
-        console.log(req.user)
+        const cookies = new cookiesMNGR(req.cookies);
+        //console.log(req.cookies)
+        console.log(cookies.getCookie("discordID"))
         res.send("Hi")
     }
 }
