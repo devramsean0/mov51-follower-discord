@@ -53,12 +53,6 @@ passport.use('twitch', new OAuth2Strategy({
   function(accessToken: any, refreshToken: any, profile: any, done: any) {
     profile.accessToken = accessToken;
     profile.refreshToken = refreshToken;
-
-    // Securely store user profile in your DB
-    //User.findOrCreate(..., function(err, user) {
-    //  done(err, user);
-    //});
-    
     done(null, profile);
   }
 ));
