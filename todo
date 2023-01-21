@@ -1,0 +1,3 @@
+TODO use the stream.online & stream.offline eventsocket requests to start and stop the flow.
+TODO make buttons ephermal
+TODO finish implementing sceduling
