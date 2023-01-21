@@ -8,7 +8,7 @@ import { app } from "./../express.js";
 app.use(express.static('public'));
 app.use(passport.initialize());
 app.use(session({
-  secret: "hello",
+  secret: String(process.env.TWITCH_SECRET),
   saveUninitialized: false,
   resave: false
 }))

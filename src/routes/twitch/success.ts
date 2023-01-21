@@ -1,5 +1,6 @@
 import type { Request, Response } from "express";
 import { db } from "../../index.js";
+import { checkStatus } from "../../lib/checkStatus.js";
 import { cookiesMNGR } from "../../lib/misc/cookies.js";
 //import { container } from "./../../container.js";
 
@@ -14,6 +15,7 @@ const data = {
         await table.set(`_${discordID}`, req.user);
         await db.push("linkedUsers", discordID);
         res.send("Hi")
+        checkStatus(discordID);
     }
 }
 export default data;
