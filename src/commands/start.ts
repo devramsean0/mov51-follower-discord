@@ -10,6 +10,6 @@ export = {
 					.setStyle(ButtonStyle.Link)
 					.setURL(`${process.env.HOSTNAME}/#discordID=${interaction.user.id}`),
 			)
-		await interaction.reply({content:'Press the button to continue!', components: [row]});
+		await interaction.reply({content:'Press the button to continue!', ephemeral: true, components: [row]});
 	}
 };
