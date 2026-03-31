@@ -44,11 +44,11 @@
   integrity sha512-JkLdIsP8fPAdh9ZZjrbHWR/+mZj0wvKS5ICibcLrRI1j84UmLMshx5n9QmL8b95d4onJ2xxiyugTgSAX7AalmA==
 
 "@sapphire/fetch@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/fetch/-/fetch-2.4.1.tgz#71bb53602ccf9baf15d5921980288b19d7d704e0"
-  integrity sha512-jKy1RCkuz2mIjsRZLVLUz9pbmDVZiFst3eVqJoDD/ay3u9NP054DYsRSE08q3EsZXHXte2dFIzVyiwL+iLeRNA==
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/fetch/-/fetch-2.4.2.tgz#8900e234c83b653b0e69e36e0d6de033bcb9bc25"
+  integrity sha512-aLZJ+ij3vAkHH6JlCbkT7Nj0dNLFdOEv0m1apNPFtUzHpaFdFeayYjLVfsY1JFVssvzjVr4x+mQTQ+XQIqraSg==
   dependencies:
-    cross-fetch "^3.1.5"
+    cross-fetch "^4.0.0"
 
 "@sapphire/shapeshift@^3.7.1":
   version "3.8.1"
@@ -411,12 +411,12 @@ core-util-is@1.0.2:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==
 
-cross-fetch@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
-  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+cross-fetch@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-4.1.0.tgz#8f69355007ee182e47fa692ecbaa37a52e43c3d2"
+  integrity sha512-uKm5PU+MHTootlWEY+mZ4vvXoCn4fLQxT9dSc1sXVMSFkINTJVN8cAQROpwcKm8bJ/c7rgZVIBWzH5T78sNZZw==
   dependencies:
-    node-fetch "2.6.7"
+    node-fetch "^2.7.0"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -909,10 +909,10 @@ node-cron@^3.0.2:
   dependencies:
     uuid "8.3.2"
 
-node-fetch@2.6.7:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
-  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+node-fetch@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
+  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
   dependencies:
     whatwg-url "^5.0.0"
 
